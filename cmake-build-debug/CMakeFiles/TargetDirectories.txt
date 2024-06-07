@@ -1,0 +1,3 @@
+/Users/akshat/CLionProjects/rubiks-cube-solver/cmake-build-debug/CMakeFiles/rubiks_cube_solver.dir
+/Users/akshat/CLionProjects/rubiks-cube-solver/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/akshat/CLionProjects/rubiks-cube-solver/cmake-build-debug/CMakeFiles/rebuild_cache.dir
