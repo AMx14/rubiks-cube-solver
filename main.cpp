@@ -20,6 +20,26 @@ using namespace std;
 int main()
 {
     RubiksCube3dArray object3DArray;
+    //object3DArray.print();
+
+    //object3DArray.l();
+    //object3DArray.print();
+
+    //object3DArray.randomShuffleCube(3);
+    //object3DArray.print();
+
+    object3DArray.l();
     object3DArray.print();
+    if(object3DArray.isSolved())
+        cout<<"Solved/n";
+    else
+        cout<<"Not Solved/n";
+
+    object3DArray.lPrime();
+    object3DArray.print();
+    if(object3DArray.isSolved())
+        cout<<"Solved\n";
+    else
+        cout<<"Not Solved"<<endl;
     return 0;
 }

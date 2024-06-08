@@ -55,17 +55,23 @@ build CMakeFiles/rubiks_cube_solver.dir/main.cpp.o: CXX_COMPILER__rubiks_cube_so
   OBJECT_DIR = CMakeFiles/rubiks_cube_solver.dir
   OBJECT_FILE_DIR = CMakeFiles/rubiks_cube_solver.dir
 
-build CMakeFiles/rubiks_cube_solver.dir/GenericRubiksCube.cpp.o: CXX_COMPILER__rubiks_cube_solver_unscanned_Debug /Users/akshat/CLionProjects/rubiks-cube-solver/GenericRubiksCube.cpp || cmake_object_order_depends_target_rubiks_cube_solver
-  DEP_FILE = CMakeFiles/rubiks_cube_solver.dir/GenericRubiksCube.cpp.o.d
+build CMakeFiles/rubiks_cube_solver.dir/Model/GenericRubiksCube.cpp.o: CXX_COMPILER__rubiks_cube_solver_unscanned_Debug /Users/akshat/CLionProjects/rubiks-cube-solver/Model/GenericRubiksCube.cpp || cmake_object_order_depends_target_rubiks_cube_solver
+  DEP_FILE = CMakeFiles/rubiks_cube_solver.dir/Model/GenericRubiksCube.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/rubiks_cube_solver.dir
-  OBJECT_FILE_DIR = CMakeFiles/rubiks_cube_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles/rubiks_cube_solver.dir/Model
 
-build CMakeFiles/rubiks_cube_solver.dir/RubiksCube3dArray.cpp.o: CXX_COMPILER__rubiks_cube_solver_unscanned_Debug /Users/akshat/CLionProjects/rubiks-cube-solver/RubiksCube3dArray.cpp || cmake_object_order_depends_target_rubiks_cube_solver
-  DEP_FILE = CMakeFiles/rubiks_cube_solver.dir/RubiksCube3dArray.cpp.o.d
+build CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube3dArray.cpp.o: CXX_COMPILER__rubiks_cube_solver_unscanned_Debug /Users/akshat/CLionProjects/rubiks-cube-solver/Model/RubiksCube3dArray.cpp || cmake_object_order_depends_target_rubiks_cube_solver
+  DEP_FILE = CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube3dArray.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/rubiks_cube_solver.dir
-  OBJECT_FILE_DIR = CMakeFiles/rubiks_cube_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles/rubiks_cube_solver.dir/Model
+
+build CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube1dArray.cpp.o: CXX_COMPILER__rubiks_cube_solver_unscanned_Debug /Users/akshat/CLionProjects/rubiks-cube-solver/Model/RubiksCube1dArray.cpp || cmake_object_order_depends_target_rubiks_cube_solver
+  DEP_FILE = CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube1dArray.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/rubiks_cube_solver.dir
+  OBJECT_FILE_DIR = CMakeFiles/rubiks_cube_solver.dir/Model
 
 
 # =============================================================================
@@ -75,7 +81,7 @@ build CMakeFiles/rubiks_cube_solver.dir/RubiksCube3dArray.cpp.o: CXX_COMPILER__r
 #############################################
 # Link the executable rubiks_cube_solver
 
-build rubiks_cube_solver: CXX_EXECUTABLE_LINKER__rubiks_cube_solver_Debug CMakeFiles/rubiks_cube_solver.dir/main.cpp.o CMakeFiles/rubiks_cube_solver.dir/GenericRubiksCube.cpp.o CMakeFiles/rubiks_cube_solver.dir/RubiksCube3dArray.cpp.o
+build rubiks_cube_solver: CXX_EXECUTABLE_LINKER__rubiks_cube_solver_Debug CMakeFiles/rubiks_cube_solver.dir/main.cpp.o CMakeFiles/rubiks_cube_solver.dir/Model/GenericRubiksCube.cpp.o CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube3dArray.cpp.o CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube1dArray.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/rubiks_cube_solver.dir
   POST_BUILD = :
