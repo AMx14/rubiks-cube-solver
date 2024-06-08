@@ -98,7 +98,8 @@
 			"sourceIndexes" : 
 			[
 				2,
-				6
+				6,
+				7
 			]
 		}
 	],
@@ -142,6 +143,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Solvers/DFSSolver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Solvers/BFSSolver.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -18,35 +18,23 @@
 #include "Model/RubiksCube3dArray.cpp"
 #include "Model/RubiksCube1dArray.cpp"
 #include "Model/RubiksCubeBitboard.cpp"
-
+#include "Solvers/DFSSolver.h"
 using namespace std;
 int main()
 {
-    RubiksCube3dArray object3DArray;
-    RubiksCube1dArray object1DArray;
-    RubiksCubeBitboard objectBitboard;
-    //object3DArray.print();
+    //DFS Solver Testing __________________________________________________________________________________________
+    RubiksCube3dArray cube;
+    cube.print();
 
-    //object3DArray.l();
-    //object3DArray.print();
+    vector<GenericRubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
+    for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+    cube.print();
+    DFSSolver<RubiksCube3dArray, Hash3d> dfsSolver(cube, 8);
+    vector<GenericRubiksCube::MOVE> solve_moves = dfsSolver.solve();
 
-    //object3DArray.randomShuffleCube(3);
-    //object3DArray.print();
-
-    object1DArray.print();
-    objectBitboard.print();
-    object3DArray.l();
-    object3DArray.print();
-    if(object3DArray.isSolved())
-        cout<<"Solved/n";
-    else
-        cout<<"Not Solved/n";
-
-    object3DArray.lPrime();
-    object3DArray.print();
-    if(object3DArray.isSolved())
-        cout<<"Solved\n";
-    else
-        cout<<"Not Solved"<<endl;
+    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+    dfsSolver.rubiksCube.print();
     return 0;
 }
