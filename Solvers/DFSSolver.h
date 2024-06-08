@@ -1,0 +1,49 @@
+//
+// Created by Akshat Maithani on 08/06/24.
+//
+
+#ifndef RUBIKS_CUBE_SOLVER_DFSSOLVER_H
+#define RUBIKS_CUBE_SOLVER_DFSSOLVER_H
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+#include <map>
+#include <set>
+#include <utility>
+#include <cmath>
+#include <limits>
+#include <queue>
+#include <stack>
+#include <deque>
+#include <list>
+#include <unordered_map>
+#include <unordered_set>
+#include <functional>
+#include <numeric>
+#include "../Model/GenericRubiksCube.h"
+
+template<typename T, typename H>
+class DFSSolver {
+private:
+
+    vector<RubiksCube::MOVE> moves;
+    int max_search_depth;
+
+//    DFS code to find the solution (helper function)
+    bool dfs(int dep) {
+        if (rubiksCube.isSolved()) return true;
+        if (dep > max_search_depth) return false;
+        for (int i = 0; i < 18; i++) {
+            rubiksCube.move(RubiksCube::MOVE(i));
+            moves.push_back(RubiksCube::MOVE(i));
+            if (dfs(dep + 1)) return true;
+            moves.pop_back();
+            rubiksCube.invert(RubiksCube::MOVE(i));
+        }
+        return false;
+    }
+};
+
+
+#endif //RUBIKS_CUBE_SOLVER_DFSSOLVER_H

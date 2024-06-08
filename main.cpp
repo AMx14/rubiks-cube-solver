@@ -16,10 +16,15 @@
 #include <functional>
 #include <numeric>
 #include "Model/RubiksCube3dArray.cpp"
+#include "Model/RubiksCube1dArray.cpp"
+#include "Model/RubiksCubeBitboard.cpp"
+
 using namespace std;
 int main()
 {
     RubiksCube3dArray object3DArray;
+    RubiksCube1dArray object1DArray;
+    RubiksCubeBitboard objectBitboard;
     //object3DArray.print();
 
     //object3DArray.l();
@@ -28,6 +33,8 @@ int main()
     //object3DArray.randomShuffleCube(3);
     //object3DArray.print();
 
+    object1DArray.print();
+    objectBitboard.print();
     object3DArray.l();
     object3DArray.print();
     if(object3DArray.isSolved())

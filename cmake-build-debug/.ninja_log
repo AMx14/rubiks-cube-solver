@@ -2,10 +2,9 @@
 4	690	1717828419970140811	CMakeFiles/rubiks_cube_solver.dir/GenericRubiksCube.cpp.o	23c7563302b3ed25
 23	680	1717830978643208998	CMakeFiles/rubiks_cube_solver.dir/RubiksCube3dArray.cpp.o	22f09213b8b3c6dd
 2	671	1717831573572505219	CMakeFiles/rubiks_cube_solver.dir/Model/GenericRubiksCube.cpp.o	5cb57276f2939773
-806	950	1717835166499728604	rubiks_cube_solver	fd8c8281cb84086b
-5	565	1717831930261462327	CMakeFiles/rubiks_cube_solver.dir/main.cpp.o	7b4f6de18ed46ee1
-2	66	1717845990962140492	build.ninja	9d655caed680f59e
+639	755	1717847601436163615	rubiks_cube_solver	6b0b3d759d1cbe98
+2	66	1717856916139201358	build.ninja	9d655caed680f59e
 2	632	1717831573572627758	CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube3dArray.cpp.o	4c333500ea6652a0
 9	806	1717835165702047172	CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube1dArray.cpp.o	8bc42fff4d776e20
+12	639	1717847600808799400	CMakeFiles/rubiks_cube_solver.dir/main.cpp.o	7b4f6de18ed46ee1
 12	676	1717846287053670350	CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCubeBitboard.cpp.o	e0f85f7e8e36a0ef
-677	824	1717846287718144697	rubiks_cube_solver	6b0b3d759d1cbe98

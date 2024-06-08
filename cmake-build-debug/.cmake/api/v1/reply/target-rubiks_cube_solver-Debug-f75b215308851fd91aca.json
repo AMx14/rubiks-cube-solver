@@ -97,7 +97,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				2
+				2,
+				6
 			]
 		}
 	],
@@ -137,6 +138,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "Model/RubiksCubeBitboard.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Solvers/DFSSolver.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
