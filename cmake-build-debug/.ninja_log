@@ -7,3 +7,5 @@
 2	66	1717845990962140492	build.ninja	9d655caed680f59e
 2	632	1717831573572627758	CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube3dArray.cpp.o	4c333500ea6652a0
 9	806	1717835165702047172	CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCube1dArray.cpp.o	8bc42fff4d776e20
+12	676	1717846287053670350	CMakeFiles/rubiks_cube_solver.dir/Model/RubiksCubeBitboard.cpp.o	e0f85f7e8e36a0ef
+677	824	1717846287718144697	rubiks_cube_solver	6b0b3d759d1cbe98
