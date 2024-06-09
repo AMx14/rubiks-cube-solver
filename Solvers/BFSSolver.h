@@ -21,6 +21,7 @@
 #include <unordered_set>
 #include <functional>
 #include <numeric>
+#include <cassert>
 #include "../Model/GenericRubiksCube.h"
 
 template<typename T, typename H>

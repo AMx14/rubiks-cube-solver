@@ -19,22 +19,23 @@
 #include "Model/RubiksCube1dArray.cpp"
 #include "Model/RubiksCubeBitboard.cpp"
 #include "Solvers/DFSSolver.h"
+#include "Solvers/BFSSolver.h"
 using namespace std;
 int main()
 {
-    //DFS Solver Testing __________________________________________________________________________________________
-    RubiksCube3dArray cube;
+    //BFS Solver -----------------------------------------------------------------------------------------------------
+    RubiksCubeBitboard cube;
     cube.print();
 
     vector<GenericRubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
-    for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+    for(auto move: shuffle_moves) cout << cube.getMove(move) << " ";
     cout << "\n";
     cube.print();
-    DFSSolver<RubiksCube3dArray, Hash3d> dfsSolver(cube, 8);
-    vector<GenericRubiksCube::MOVE> solve_moves = dfsSolver.solve();
 
-    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+    BFSSolver<RubiksCubeBitboard, HashBitboard> bfsSolver(cube);
+    vector<GenericRubiksCube::MOVE> solve_moves = bfsSolver.solve();
+
+    for(auto move: solve_moves) cout << cube.getMove(move) << " ";
     cout << "\n";
-    dfsSolver.rubiksCube.print();
-    return 0;
+    bfsSolver.rubiksCube.print();
 }

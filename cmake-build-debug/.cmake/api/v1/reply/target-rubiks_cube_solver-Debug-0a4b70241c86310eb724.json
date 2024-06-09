@@ -99,7 +99,8 @@
 			[
 				2,
 				6,
-				7
+				7,
+				8
 			]
 		}
 	],
@@ -148,6 +149,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "Solvers/BFSSolver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Solvers/IDDFSSolver.h",
 			"sourceGroupIndex" : 1
 		}
 	],
