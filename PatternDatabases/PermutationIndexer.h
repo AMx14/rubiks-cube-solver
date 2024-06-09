@@ -20,6 +20,7 @@
 #include <unordered_set>
 #include <functional>
 #include <numeric>
+#include <cassert>
 #include "math.h"
 
 using namespace std;
