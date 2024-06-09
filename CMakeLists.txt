@@ -13,4 +13,9 @@ add_executable(rubiks_cube_solver main.cpp
         Solvers/BFSSolver.h
         Solvers/IDDFSSolver.h
         Solvers/IDAstarSolver.h
-        Model/PatternDatabase/PatternDatabase.h)
+        Model/PatternDatabase/PatternDatabase.h
+        PatternDatabases/CornerDBMaker.cpp
+        PatternDatabases/CornerDBMaker.h
+        PatternDatabases/math.h
+        PatternDatabases/math.cpp
+        PatternDatabases/PermutationIndexer.h)
