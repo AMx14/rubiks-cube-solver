@@ -20,22 +20,28 @@
 #include "Model/RubiksCubeBitboard.cpp"
 #include "Solvers/DFSSolver.h"
 #include "Solvers/BFSSolver.h"
+#include "Solvers/IDAstarSolver.h"
+#include "PatternDatabases/CornerDBMaker.h"
+
+
 using namespace std;
 int main()
 {
-    //BFS Solver -----------------------------------------------------------------------------------------------------
+    string fileName = "/Users/akshat/CLionProjects/rubiks-cube-solver/Databases/cornerDepth5V1.txt";
     RubiksCubeBitboard cube;
+    auto shuffleMoves = cube.randomShuffleCube(13);
     cube.print();
-
-    vector<GenericRubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
-    for(auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+    for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
     cout << "\n";
-    cube.print();
 
-    BFSSolver<RubiksCubeBitboard, HashBitboard> bfsSolver(cube);
-    vector<GenericRubiksCube::MOVE> solve_moves = bfsSolver.solve();
+    IDAstarSolver<RubiksCubeBitboard, HashBitboard> idaStarSolver(cube, fileName);
+    auto moves = idaStarSolver.solve();
 
-    for(auto move: solve_moves) cout << cube.getMove(move) << " ";
+    idaStarSolver.rubiksCube.print();
+    for (auto move: moves) cout << cube.getMove(move) << " ";
     cout << "\n";
-    bfsSolver.rubiksCube.print();
+
+
+    return 0;
+
 }
