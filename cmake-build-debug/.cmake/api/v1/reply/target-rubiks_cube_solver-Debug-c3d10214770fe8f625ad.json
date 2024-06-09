@@ -100,7 +100,9 @@
 				2,
 				6,
 				7,
-				8
+				8,
+				9,
+				10
 			]
 		}
 	],
@@ -154,6 +156,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "Solvers/IDDFSSolver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Solvers/IDAstarSolver.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Model/PatternDatabase/PatternDatabase.h",
 			"sourceGroupIndex" : 1
 		}
 	],

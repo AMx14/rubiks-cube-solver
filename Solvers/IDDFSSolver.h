@@ -49,7 +49,6 @@ public:
         }
         return moves;
     }
-
 };
 
 #endif //RUBIKS_CUBE_SOLVER_IDDFSSOLVER_H
