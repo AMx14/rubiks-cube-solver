@@ -2,6 +2,9 @@
 // Created by Akshat Maithani on 09/06/24.
 //
 #include "PatternDatabase.h"
+#include <vector>
+#include <fstream>
+#include <stdexcept>
 using namespace std;
 
 PatternDatabase::PatternDatabase(const size_t size) :

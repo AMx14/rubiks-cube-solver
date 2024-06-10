@@ -21,6 +21,8 @@
 #include <functional>
 #include <numeric>
 #include <cassert>
+#include <vector>
+#include <fstream>
 #include "math.h"
 
 using namespace std;

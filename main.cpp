@@ -15,12 +15,11 @@
 #include <unordered_set>
 #include <functional>
 #include <numeric>
-#include "Model/RubiksCube3dArray.cpp"
-#include "Model/RubiksCube1dArray.cpp"
-#include "Model/RubiksCubeBitboard.cpp"
 #include "Solvers/DFSSolver.h"
 #include "Solvers/BFSSolver.h"
+#include "Solvers/IDDFSSolver.h"
 #include "Solvers/IDAstarSolver.h"
+//#include "PatternDatabases/CornerPatternDatabase.h"
 #include "PatternDatabases/CornerDBMaker.h"
 
 
@@ -29,7 +28,7 @@ int main()
 {
     string fileName = "/Users/akshat/CLionProjects/rubiks-cube-solver/Databases/cornerDepth5V1.txt";
     RubiksCubeBitboard cube;
-    auto shuffleMoves = cube.randomShuffleCube(13);
+    auto shuffleMoves = cube.randomShuffleCube(5);
     cube.print();
     for (auto move: shuffleMoves) cout << cube.getMove(move) << " ";
     cout << "\n";

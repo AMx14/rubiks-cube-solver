@@ -2,6 +2,9 @@
 // Created by Akshat Maithani on 08/06/24.
 //
 #include "GenericRubiksCube.h"
+#include <cstdint>
+#include <string>
+#include <iostream>
 class RubiksCubeBitboard : public GenericRubiksCube {
 
 private:
